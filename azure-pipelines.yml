@@ -7,7 +7,17 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    version- task: spira-build-task@0
+  inputs:
+    connectedService: 'Spiratest'
+    project: 'PR1'
+    releaseId: 'RL20'
+    baseUrl: 'https://dev.azure.com/retrosboy'
+    buildNumber: '$(Build.BuildNumber)'
+    buildStatus: '$(Agent.JobStatus)'
+    buildId: '$(Build.BuildId)'
+    sourceVersion: '$(Build.SourceVersion)'
+    projectName: '$(System.TeamProject)'ec: '8.x'
   displayName: 'Install Node.js'
 
 - script: |
