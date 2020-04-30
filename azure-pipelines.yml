@@ -17,7 +17,7 @@ steps:
     buildStatus: '$(Agent.JobStatus)'
     buildId: '$(Build.BuildId)'
     sourceVersion: '$(Build.SourceVersion)'
-    projectName: '$(System.TeamProject)'ec:'8.x'
+    projectName: '$(System.TeamProject)'
   displayName: 'Install Node.js'
 
 - script: |
