@@ -9,15 +9,15 @@ steps:
   inputs:
     version
 - task: spira-build-task@0
-    connectedService: 'Spiratest'
-    project: '1'
-    releaseId: '21'
-    baseUrl: 'https://dev.azure.com/retrosboy'
-    buildNumber: '$(Build.BuildNumber)'
-    buildStatus: '$(Agent.JobStatus)'
-    buildId: '$(Build.BuildId)'
-    sourceVersion: '$(Build.SourceVersion)'
-    projectName: '$(System.TeamProject)'
+  connectedService: 'Spiratest'
+  project: '1'
+  releaseId: '21'
+  baseUrl: 'https://dev.azure.com/retrosboy'
+  buildNumber: '$(Build.BuildNumber)'
+  buildStatus: '$(Agent.JobStatus)'
+  buildId: '$(Build.BuildId)'
+  sourceVersion: '$(Build.SourceVersion)'
+  projectName: '$(System.TeamProject)'
   displayName: 'Install Node.js'
 
 - script: |
