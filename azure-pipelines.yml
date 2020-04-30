@@ -8,7 +8,6 @@ steps:
 - task: NodeTool@0
   inputs:
     version- task: spira-build-task@0
-  inputs:
     connectedService: 'Spiratest'
     project: '1'
     releaseId: '20'
