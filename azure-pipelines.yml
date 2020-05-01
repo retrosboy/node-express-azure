@@ -23,7 +23,7 @@ steps:
   inputs:
     connectedService: 'Spiratest'
     project: '1'
-    releaseId: '22'
+    releaseId: '21'
     baseUrl: 'https://dev.azure.com/retrosboy'
     buildNumber: '$(Build.BuildNumber)'
     buildStatus: '$(Agent.JobStatus)'
